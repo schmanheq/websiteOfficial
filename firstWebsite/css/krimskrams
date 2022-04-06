@@ -1,0 +1,111 @@
+
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    color: beige;
+}
+.me {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    position: absolute;
+    top: 350px;
+    left: 810px;
+    color: beige;
+}
+
+.Rectangle {
+    position: absolute;
+    width: 190px;
+    height: 3px;
+    background-color: beige;
+    top: 510px;
+    left: 610px;
+   
+
+}
+.Rectangle2 {
+    position: absolute;
+    width: 190px;
+    height: 3px;
+    background-color: beige;
+    top: 510px;
+    left: 1180px;
+
+}
+
+.img1 {
+    
+    position: absolute;
+    bottom: 0px;
+    left: 70%;
+    filter: brightness(60%); 
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+.img2 {
+    position: absolute;
+    height: 9.5cm;
+    width: 270px;
+    bottom: 0px;
+    left:56%;
+    filter: brightness(75%);
+    border: 5px solid beige;
+    
+
+}
+.img4 {
+    position: absolute;
+    padding: 0%;
+    background-size: cover;
+
+}
+.Rectangle3 {
+    position: absolute;
+    width: 790px;
+    height: 380px;
+    background-color: black;
+    top: 250px;
+    left: 600px;
+    filter: opacity(0.7); 
+
+}
+html, body {
+    margin: 0; height: 100%; overflow: hidden; 
+}
+
+.background {
+   
+    background-size: cover;
+
+}
+
+header {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+
+
+}
+
+main {
+    margin-top: 5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(28, 66, 66);
+    color: white;
+}
+
+

@@ -1,0 +1,441 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.line1 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 60px;
+    color: white;
+    width: 1000px;
+    height: 200px;
+    animation-name: appear;
+    animation-duration: 10s;
+    
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    margin-top: -100px;
+    margin-left: -640px;
+}
+
+.name {
+    font-family: "Source Code Pro", monospace;
+    font-size: 150px;
+    color: white;
+    animation: appear;
+    animation-duration: 15s;
+    
+
+    position: absolute;
+    top: 150px;
+    left: 320px;
+   
+}
+
+.test {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+.dot {
+    font-family: "Source Code Pro", monospace;
+    font-size: 150px;
+    color: aqua; 
+    animation-name: appear;
+    animation-duration:18s;
+    
+
+    position: absolute;
+    top: 150px;
+    left: 850px;
+}
+.text {
+    font-family: "Source Code Pro", monospace;
+    font-size: 15px;
+    color: rgb(202, 198, 198);
+    width: 750px;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+
+    position: absolute;
+    top: 470px;
+    left: 320px;;
+}
+.background {
+    font-family: "Source Code Pro", monospace;
+    font-size: 100px;
+    color: white;
+    width: 1500px;
+    filter: opacity(0.1);
+    animation-name: appear;
+    animation-duration: 5s;
+
+    position: absolute;
+    top: 20px;
+    left: 320px;
+
+}
+
+.link {
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    animation-name: appear;
+    animation-duration: 2s;
+
+    position: absolute;
+    top: 700px;
+    left: 350px;
+}
+
+.link:hover{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg); opacity: 0;}
+    33% {transform: rotate(120deg);}
+    66%{transform: rotate(240deg);}
+    100% {transform: rotate(360deg);
+        opacity: 1;
+    }
+
+
+}
+
+.rectangle {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    filter: opacity(0.4);
+    transition: all 0.5s;
+    animation: appear 5s;
+    
+
+    position: absolute;
+    top: 0%;
+
+}
+.rectangle:hover {
+    height: 80px;
+    filter: opacity(1);
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    animation-fill-mode: forwards;
+
+    position: absolute;
+    left: 1%;
+}
+.rectangle:hover .arrow {
+    width: 80px;
+    height: 80px;
+    animation-name: rotateArrow;
+    animation-duration: 0.2s;
+    transition: all;
+    
+}
+@keyframes rotateArrow {
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(180deg);}         
+}
+
+/* Button 1 */
+.button1 {
+    font-family: "Source Code Pro", monospace; 
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    border: 3px solid white;
+    
+
+    transition: all 0.5s;
+  
+    position: absolute;
+    top: 16%;
+    left: 10%;
+ }
+.button1:hover {
+     background-color: transparent;
+ }
+ .button1::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    width: 210px;
+    height: 65px;
+    border-radius: 25px;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fade 10s linear infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+   
+
+    position: absolute;
+    top: -5px;
+    left: -8px;
+}
+
+.button1:hover::before {
+    opacity: 1;
+}
+
+.button1::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #111; 
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.button1:hover::after {
+    opacity: 1;
+}
+
+
+.rectangle:hover .button1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 60px;
+}
+
+/* Button 2*/
+.button2 {
+    font-family: "Source Code Pro", monospace; 
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    border: 3px solid white;
+
+    transition: all 0.5s;
+  
+    position: absolute;
+    top: 16%;
+    left: 25%;
+}
+
+.button2:hover {
+    background-color: transparent;
+}
+.button2::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    width: 210px;
+    height: 65px;
+    border-radius: 25px;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fade 10s linear infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+   
+ 
+    position: absolute;
+    top: -5px;
+    left: -8px;
+}
+.button2:hover::before {
+    opacity: 1;
+}
+ 
+.button2::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #111; 
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+ .button2:hover::after {
+    opacity: 1;
+}
+.rectangle:hover .button2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 60px;}
+
+
+
+    /* Button 3*/
+.button3 {
+    font-family: "Source Code Pro", monospace; 
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    border: 3px solid white;
+
+    transition: all 0.5s;
+  
+    position: absolute;
+    top: 16%;
+    left: 40%;
+}
+
+.button3:hover {
+    background-color: transparent;
+}
+
+.button3::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    width: 260px;
+    height: 65px;
+    border-radius: 25px;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fade 10s linear infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+   
+ 
+    position: absolute;
+    top: -5px;
+    left: -8px;
+}
+ 
+.button3:hover::before {
+    opacity: 1;
+}
+ 
+.button3::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #111; 
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+ 
+.button3:hover::after {
+    opacity: 1;
+}
+
+.rectangle:hover .button3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: 250px;
+    height: 60px;
+}
+
+
+/* Button 4*/
+
+.button4 {
+    font-family: "Source Code Pro", monospace; 
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    
+    width: 180px;
+    height: 30px;
+    border-radius: 25px;
+    border: 3px solid white;
+
+    transition: all 0.5s;
+  
+    position: absolute;
+    top: 16%;
+    left: 55%;
+}
+
+.button4:hover {
+    background-color: transparent;
+}
+
+.button4::before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   width: 310px;
+   height: 65px;
+   border-radius: 25px;
+   background-size: 500%;
+   z-index: -1;
+   filter: blur(5px);
+   animation: fade 10s linear infinite;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+  
+
+   position: absolute;
+   top: -5px;
+   left: -8px;
+}
+
+.button4:hover::before {
+   opacity: 1;
+}
+
+.button4::after {
+   content: '';
+   height: 100%;
+   width: 100%;
+   border-radius: 25px;
+   background: #111; 
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   z-index: -1;
+}
+
+.button4:hover::after {
+   opacity: 1;
+}
+
+.rectangle:hover .button4 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: 300px;
+    height: 60px;
+    left: 57%;
+}
+
+@keyframes fade {
+    0%{background-position: 0 0;}
+    100% {background-position: 400% 0;}
+ }
