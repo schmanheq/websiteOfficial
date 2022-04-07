@@ -6,15 +6,9 @@ def index(response):
     indexHTML = open('static/html/index.html', 'r')
     return HttpResponse(indexHTML)
 
-def home(response):
-    return HttpResponse("<h1> Thats me: </h1>"
-                        " <p> nickname: schmANH </p>"
-                        "<p> hobbies: chilling on monkeytype.com, playing chess (i prefer playing on a real board, than online), self growth (if you dont know what this means, google it </p>"
-                        )
-
-#def thatsMe(response):
-    #html = open('static/html/html.html', 'r')
-    #return HttpResponse(html)
+def thatsMe(response):
+    thatsMe = open('static/html/thatsMe.html', 'r')
+    return HttpResponse(thatsMe)
 
 def test(response):
     testhtml = open('static/html/html.html', 'r')
