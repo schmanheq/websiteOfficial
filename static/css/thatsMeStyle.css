@@ -2,13 +2,24 @@ body {
     color: #fff;
 }
 
+section {
+    position: relative;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    min-height: 400px;
+
+}
+
+/* section1 */
+
 .title {
     font-family: "Source Code Pro", monospace ;
     font-size: 100px; 
-
     position: absolute;
-    left: 35%;
-    top: 5%;
+    left: 40%;
+    z-index: 1;
+    
 
 }
 
@@ -17,24 +28,43 @@ body {
     font-size: 25px;
     width: 600px;
     height: 600px;
-
     position: absolute;
-    top: 500px;
-    left: 55%;
-}
-
-.backgroundpic {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    filter: blur(3px);
+    top: 20%;
+    left: 55%;  
 }
 
 .me {
-    position: absolute;
-    top: 400px;
-    left: 20%;
+    
     width: 410px;
     height: 700px;
     border-radius: 205px/350px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}    
+
+/*
+.backgroundpic {
+    z-index: -1;
+   
+    width: 100%;
+    filter: blur(3px);
+} */ 
+
+
+/*
+.text2 {
+    position: absolute;
+    top: 1300px;
+    left: 20%;
+    width: 750px;
+    height: 500px;
+    text-align: justify;
 }
+
+.title2 {
+    position: absolute;
+    left: 10%;
+    top: 1300px;
+} */
+
