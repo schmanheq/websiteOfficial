@@ -17,7 +17,8 @@ section {
     font-family: "Source Code Pro", monospace ;
     font-size: 100px; 
     position: absolute;
-    left: 40%;
+    top: 10%;
+    left: 35%;
     z-index: 1;
     
 
@@ -25,23 +26,35 @@ section {
 
 .text1 {
     font-family: "Source Code Pro", monospace;
-    font-size: 25px;
-    width: 600px;
+    font-size: 35px;
+    width: 650px;
     height: 600px;
     position: absolute;
-    top: 20%;
-    left: 55%;  
+    top: 10%;
+    left: 50%;  
 }
 
 .me {
     
     width: 410px;
     height: 700px;
-    border-radius: 205px/350px;
     position: absolute;
-    left: 20%;
-    top: 10%;
-}    
+    left: 15%;
+    top: 7.5%;
+    border-radius: 410px;
+}   
+
+.text1::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -90px;
+    width: 130%;
+    height: 110%;
+    background-color: black;
+    opacity: .1;
+    
+}
 
 /*
 .backgroundpic {

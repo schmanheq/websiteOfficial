@@ -10,8 +10,18 @@
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
     .black {
-        background-color: #111;
+        background: linear-gradient(180deg, #111, #362A2A);
         height: 800px;
+    }
+    .black::before {
+        content: '';
+        width: 500px;
+        height: 800px;
+        background-color: #362A2A;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 0;
     }
 
     .blue {
