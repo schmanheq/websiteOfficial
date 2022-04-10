@@ -1,5 +1,6 @@
 body {
     color: #fff;
+    font-family: 'Source Code Pro', monospace;
 }
 
 section {
@@ -7,14 +8,13 @@ section {
     display: flex;
     margin: 0;
     width: 100%;
-    min-height: 400px;
+    min-height: 800px;
 
 }
 
 /* section1 */
 
 .title {
-    font-family: "Source Code Pro", monospace ;
     font-size: 100px; 
     position: absolute;
     top: 10%;
@@ -25,7 +25,6 @@ section {
 }
 
 .text1 {
-    font-family: "Source Code Pro", monospace;
     font-size: 35px;
     width: 650px;
     height: 600px;
@@ -56,28 +55,13 @@ section {
     
 }
 
-/*
-.backgroundpic {
-    z-index: -1;
-   
-    width: 100%;
-    filter: blur(3px);
-} */ 
 
-
-/*
-.text2 {
-    position: absolute;
-    top: 1300px;
-    left: 20%;
-    width: 750px;
-    height: 500px;
-    text-align: justify;
-}
-
+/* Section 2 */
 .title2 {
+    font-size: 100px;
+    text-align: center;
     position: absolute;
-    left: 10%;
-    top: 1300px;
-} */
+    
+} 
+
 
