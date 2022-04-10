@@ -1,28 +1,69 @@
 body {
     color: #fff;
     font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 section {
     position: relative;
     display: flex;
     margin: 0;
+    padding: 0;
     width: 100%;
-    min-height: 800px;
+    min-height: 1000px;
 
 }
+.blue {
+    background-color: #422CD0; 
+}
+.orange {
+    background-color: #FEBB4C;
+}
 
-/* section1 */
 
+/* title section */
 .title {
     font-size: 100px; 
     position: absolute;
     top: 10%;
     left: 35%;
-    z-index: 1;
-    
-
+    z-index: 1;  
 }
+
+.titleSection {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.titlewave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.titlewave svg {
+    position: relative;
+    display: block;
+    width: calc(252% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.titlewave .shape-fill {
+    fill: #FF5733;
+}
+
+
+
+
+
+/* section1 */
 
 .text1 {
     font-size: 35px;
@@ -43,7 +84,7 @@ section {
     border-radius: 410px;
 }   
 
-.text1::after {
+.text1::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -51,8 +92,35 @@ section {
     width: 130%;
     height: 110%;
     background-color: black;
-    opacity: .1;
+    opacity: .1;  
+}
+.text1::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 130%;
+    height: 110%;
+    background-color: black;
+    opacity: .1;  
+}
+
+
+
+
+.red {
+    background-color: #FF5733;
     
+}
+.red::before {
+    content: '';
+    width: 500px;
+    height: 800px;
+    background-color: #362A2A;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
 }
 
 
