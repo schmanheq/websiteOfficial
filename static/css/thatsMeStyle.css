@@ -13,7 +13,7 @@ section {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 1000px;
+    min-height: 100vh;
 
 }
 .blue {
@@ -26,15 +26,16 @@ section {
 
 /* title section */
 .title {
-    font-size: 100px; 
+    font-size: clamp(4rem, 6rem, 8rem);
     position: absolute;
-    top: 10%;
-    left: 35%;
+    top: 1%;
+    left: 5%;
     z-index: 1;  
 }
 
 .titleSection {
     background: linear-gradient(135deg, #141e30, #243b55);
+    height: 110vh;
 }
 
 .titlewave {
@@ -59,22 +60,15 @@ section {
     fill: #FF5733;
 }
 
-
-
-
-
-/* section1 */
-
 .text1 {
-    font-size: 35px;
+    font-size: 25px;
     width: 650px;
     height: 600px;
     position: absolute;
-    top: 10%;
-    left: 50%;  
+    top: 20%;
+    left: 60%;  
 }
-
-.me {
+/*.me {
     
     width: 410px;
     height: 700px;
@@ -82,46 +76,37 @@ section {
     left: 15%;
     top: 7.5%;
     border-radius: 410px;
-}   
+}  */ 
+  
 
 .text1::before {
     content: '';
     position: absolute;
-    top: -50px;
-    left: -90px;
-    width: 130%;
-    height: 110%;
+    top: -4%;
+    left: -4%;
+    width: 110%;
+    height: 90%;
     background-color: black;
     opacity: .1;  
 }
 .text1::after {
     content: '';
     position: absolute;
-    top: -60px;
-    left: -80px;
-    width: 130%;
-    height: 110%;
+    top: -6%;
+    left: -2%;
+    width: 110%;
+    height: 90%;
     background-color: black;
     opacity: .1;  
 }
 
-
-
+/* section1 */
 
 .red {
     background-color: #FF5733;
     
 }
-.red::before {
-    content: '';
-    width: 500px;
-    height: 800px;
-    background-color: #362A2A;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: 0;
-}
+/* color gradient für Übergang */
 
 
 /* Section 2 */
