@@ -68,16 +68,6 @@ section {
     top: 20%;
     left: 60%;  
 }
-/*.me {
-    
-    width: 410px;
-    height: 700px;
-    position: absolute;
-    left: 15%;
-    top: 7.5%;
-    border-radius: 410px;
-}  */ 
-  
 
 .text1::before {
     content: '';
@@ -100,6 +90,18 @@ section {
     opacity: .1;  
 }
 
+.me {
+    position: absolute;
+    top: -150px;
+    left: 10%;
+    width: 675px;
+    height: 900px;
+
+}
+
+.meBack {
+    
+}
 /* section1 */
 
 .red {
