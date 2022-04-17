@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include("testWebsite.url")),
     path('thatsMe/', include("testWebsite.url")),
     path('test/', include("testWebsite.url")),
+    path('Danksagungen/', include("testWebsite.url")),
 ]

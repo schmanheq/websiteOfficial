@@ -22,6 +22,9 @@ section {
 .orange {
     background-color: #FEBB4C;
 }
+ul {
+    list-style-type: none;
+}
 
 
 /* title section */
@@ -99,24 +102,39 @@ section {
 
 }
 
-.meBack {
-    
-}
+
+
 /* section1 */
 
 .red {
     background-color: #FF5733;
     
 }
+.btncontainer {
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+
+}
+.btn a {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid;
+}
+
 /* color gradient für Übergang */
 
 
 /* Section 2 */
-.title2 {
-    font-size: 100px;
-    text-align: center;
-    position: absolute;
-    
-} 
+
 
 

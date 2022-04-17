@@ -14,6 +14,10 @@ def test(response):
     testhtml = open('static/html/html.html', 'r')
     return HttpResponse(testhtml)
 
+def Danksagungen(response): 
+    danke = open('static/html/danke.html', 'r')
+    return HttpResponse(danke)
+
 
 
 #https://stackoverflow.com/questions/21370298/django-errno-2-no-such-file-or-directory
