@@ -15,8 +15,8 @@ def test(response):
     return HttpResponse(testhtml)
 
 def Danksagungen(response): 
-    danke = open('static/html/danke.html', 'r')
-    return HttpResponse(danke)
+    dankehtml = open('static/html/danke.html', 'r')
+    return HttpResponse(dankehtml)
 
 
 

@@ -1,36 +1,71 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: black;
-    color: white;
+    background-color: antiquewhite;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
-section {
-  position: relative;
-  left: 50%;
+.rectangle {
+  border: 2px solid black;
+  width: 100vw;
+  height: 10vh;
+  transition: all 2s ease-in-out;
+
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 5px;
+}
+
+.rectangle:hover {
+  height: 15vh;
+}
+
+
+.button {
+  width: 20vw;
+  height: 5vh;
+  font-size: 2rem;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 1;
-  transition: 2s all ease;
-  height: 110vh;
-}
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+  border: 3px solid white;
 }
 
-#one {
-  background-color: beige;
-  z-index: 9999;
+.arrow {
+  height: 5rem;
+  width: 5rem;
+  margin-left: .5rem;
 }
 
-#two {
-  background-color: blue;
-  z-index: 9990;
+.button ul {
+  display: flex;
+}
+
+.button button {
+  background-color: transparent;
+  border-radius: 1.56rem;
+  border: 3px solid white;
+  width: 9rem;
+  height: 2rem;
+  font-family: "Source Code Pro", monospace; 
+  font-size: 1rem;
+  color: white;
 }
