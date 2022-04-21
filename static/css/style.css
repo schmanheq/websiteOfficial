@@ -194,8 +194,9 @@ body::-webkit-scrollbar {
     z-index: -1;
     filter: blur(5px);
     animation: fade 10s linear infinite;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    
    
 
     position: absolute;
@@ -209,20 +210,11 @@ body::-webkit-scrollbar {
 
 .button1::after {
     content: '';
-    height: 100%;
+    background-color: black;
     width: 100%;
+    height: 100%;
     border-radius: 25px;
-    background: #111; 
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
     z-index: -1;
-}
-
-.button1:hover::after {
-    opacity: 1;
 }
 
 
