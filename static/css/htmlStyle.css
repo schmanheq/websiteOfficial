@@ -165,12 +165,27 @@ body {
 
 /* text */
 
+
 .bgText {
   font-family: "Source Code Pro", monospace;
   font-size: 6.25rem;
   color: white;
-  filter: opacity(0.2);
+  filter: opacity(0.15);
   margin-left: 5rem;
+  margin-top: 10rem;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(5%, auto);
+  margin-left: 5rem;
+  
+}
+.container {
+  position: absolute;
+  top: 25em;
 }
 
 .hey {
@@ -178,11 +193,22 @@ body {
   font-size: 4rem;
   letter-spacing: .2rem;
   color: white;
-  margin-left: 5rem;
-  
-  
-
+  grid-column: 1/3;
 }
+.name {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  font-size: 9.375rem;
+  width: auto;
+}
+.box1 {
+  grid-column: 1/3;
+  width: 50%;
+  
+  
+}
+
+
 
 @media screen and (max-width: 1070px) {
   .grid {
@@ -190,5 +216,9 @@ body {
   }
   li {
     flex: 50%;
+  }
+
+  .box1 { 
+    width: 90%;
   }
 }
