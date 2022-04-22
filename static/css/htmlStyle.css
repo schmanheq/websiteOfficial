@@ -45,10 +45,9 @@ body {
   align-items: flex-start;
   background-color: transparent;
   width: 100%;
-  height: 10vh;
+  height: auto;
   transition: all 0.5s;
   filter: brightness(0.3);
-
   border: 2px solid white;
 }
 
@@ -165,14 +164,17 @@ body {
 
 /* text */
 
-
+.content {
+  position: relative;
+  margin-top: 1rem;
+  height: auto;
+}
 .bgText {
   font-family: "Source Code Pro", monospace;
   font-size: 6.25rem;
   color: white;
   filter: opacity(0.15);
   margin-left: 5rem;
-  margin-top: 10rem;
 }
 
 .grid {
@@ -185,7 +187,7 @@ body {
 }
 .container {
   position: absolute;
-  top: 25em;
+  top: 5em;
 }
 
 .hey {
@@ -208,6 +210,20 @@ body {
   
 }
 
+.text {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+  width: 60%;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+
+
+
 
 
 @media screen and (max-width: 1070px) {
@@ -217,8 +233,21 @@ body {
   li {
     flex: 50%;
   }
-
   .box1 { 
     width: 90%;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .hey {
+    font-size: 5rem;
+  }
+  .name {
+    font-size: 9.5rem;
+  }
+  .bgText {
+    font-size: 7rem;
   }
 }
