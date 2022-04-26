@@ -1,444 +1,272 @@
+/* html {
+  scroll-behavior: smooth;
+}
 body {
-    margin: 0;
+    background-color: antiquewhite;
+    color: black;
     padding: 0;
+    margin: 0;
 }
-body::-webkit-scrollbar {
-    display: none;
-}
-
-.line1 {
-    font-family: "Source Code Pro", monospace;
-    font-size: 3.75rem;
-    color: white;
-    width: 52%;
-    height: 200px;
-    animation-name: appear;
-    animation-duration: 10s;
-    
-    position: absolute;
-    top: 35%;
-    left: 50%; 
-    margin-top: -100px;
-    margin-left: -640px;
-}
-
-.name {
-    font-family: "Source Code Pro", monospace;
-    font-size: 150px;
-    color: white;
-    animation: appear;
-    animation-duration: 15s;
-    
-
-    position: absolute;
-    top: 150px;
-    left: 320px;
-   
-}
-
-.test {
-    position: absolute;
-    top: 10%;
-    left: 12%;
-}
-.dot {
-    font-family: "Source Code Pro", monospace;
-    font-size: 150px;
-    color: aqua; 
-    animation-name: appear;
-    animation-duration:18s;
-    
-
-    position: absolute;
-    top: 150px;
-    left: 850px;
-}
-.text {
-    font-family: "Source Code Pro", monospace;
-    font-size: 15px;
-    color: rgb(202, 198, 198);
-    width: 750px;
-    animation-name: rotate;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    transition: all 1s;
-
-    position: absolute;
-    top: 470px;
-    left: 320px;;
-}
-.background {
-    font-family: "Source Code Pro", monospace;
-    font-size: 100px;
-    color: white;
-    width: 1500px;
-    filter: opacity(0.1);
-    animation-name: appear;
-    animation-duration: 5s;
-
-    position: absolute;
-    top: 20px;
-    left: 320px;
-
-}
-
-.link {
-    font-family: "Source Code Pro", monospace;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
-    animation-name: appear;
-    animation-duration: 2s;
-
-    position: absolute;
-    top: 700px;
-    left: 350px;
-}
-
-.link:hover{
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-@keyframes appear {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes rotate {
-    0% {transform: rotate(0deg); opacity: 0;}
-    33% {transform: rotate(120deg);}
-    66%{transform: rotate(240deg);}
-    100% {transform: rotate(360deg);
-        opacity: 1;
-    }
-
-
-}
-
-
-
 
 .rectangle {
-    display: grid;
-    grid-template-columns: 10% 22.5% 22.5% 22.5% 22.5%;
+  border: 2px solid black;
+  width: 100vw;
+  height: 10vh;
+  transition: all 2s ease-in-out;
 
-
-    width: 100vh;
-    height: 5vh;
-    background-color: transparent;
-    filter: opacity(0.4);
-    transition: all 0.5s;
-    animation: appear 5s;
-    border: 2px solid white;
-
-    position: absolute;
-    top: 0%;
-
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 5px;
 }
+
 .rectangle:hover {
-    height: 10vh;
-    filter: opacity(1);
-}
-.arrow {
-    width: 40px;
-    height: 40px;
-    animation-fill-mode: forwards;
-
-    position: absolute;
-    left: 1%;
-}
-.rectangle:hover .arrow {
-    width: 80px;
-    height: 80px;
-    animation-name: rotateArrow;
-    animation-duration: 0.2s;
-    transition: all;
-    
-}
-@keyframes rotateArrow {
-    0% {transform: rotate(0deg);} 
-    100% {transform: rotate(180deg);}         
+  height: 15vh;
 }
 
-/* Button 1 */
-.button1 {
-    font-family: "Source Code Pro", monospace; 
-    font-size: 15px;
-    color: white;
-    background-color: transparent;
 
-    width: 150px;
-    height: 30px;
-    border-radius: 25px;
-    border: 3px solid white;
-    
+.button {
+  width: 20vw;
+  height: 5vh;
+  font-size: 2rem;
+}
+*/
 
-    transition: all 0.5s;
+* {
+    box-sizing: border-box;
+  }
   
-    position: absolute;
-    top: 16%;
-    left: 10%;
- }
-.button1:hover {
-     background-color: transparent;
- }
- .button1::before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    width: 210px;
-    height: 65px;
-    border-radius: 25px;
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+    filter: brightness(0.3);
+  }
+  
+  .navbar:hover {
+    filter: brightness(1);
+  }
+  .arrow {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .button ul {
+    display: flex;
+  }
+  
+  .button button {
+    justify-content: space-around;
+    background-color: transparent;
+    border-radius: 1.56rem;
+    border: 3px solid white;
+    width: 11rem;
+    height: 4rem;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    transition: all 0.5s;
+  }
+  
+  .button button:hover {
+    background-color: transparent;
+  }
+  /*
+  .button button::before {
+    content: "hallo";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    width: 100px;
+    height: 100px;
+    border-radius: 1.5625rem;
     background-size: 500%;
     z-index: -1;
     filter: blur(5px);
     animation: fade 10s linear infinite;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    
-   
-
-    position: absolute;
-    top: -5px;
-    left: -8px;
-}
-
-.button1:hover::before {
-    opacity: 1;
-}
-
-.button1::after {
-    content: '';
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    z-index: -1;
-}
-
-
-.rectangle:hover .button1 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    width: 200px;
-    height: 60px;
-}
-
-/* Button 2*/
-.button2 {
-    font-family: "Source Code Pro", monospace; 
-    font-size: 15px;
-    color: white;
-    background-color: transparent;
-    
-    width: 150px;
-    height: 30px;
-    border-radius: 25px;
-    border: 3px solid white;
-
-    transition: all 0.5s;
+  }
   
-    position: absolute;
-    top: 16%;
-    left: 25%;
-}
-
-.button2:hover {
-    background-color: transparent;
-}
-.button2::before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    width: 210px;
-    height: 65px;
-    border-radius: 25px;
+  .button button:hover::before {
+    opacity: 1;
+  } 
+  
+  
+  .btn1::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    width: 50%;
+    height: 100px;
+    border-radius: 1.5625rem;
     background-size: 500%;
     z-index: -1;
     filter: blur(5px);
     animation: fade 10s linear infinite;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-   
- 
-    position: absolute;
-    top: -5px;
-    left: -8px;
-}
-.button2:hover::before {
     opacity: 1;
-}
- 
-.button2::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    background: #111; 
- 
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-}
- .button2:hover::after {
+    transition: all 0.5s ease-in-out;
+  
+    position: relative;
+  }
+  
+  .btn1:hover::before {
     opacity: 1;
-}
-.rectangle:hover .button2 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    width: 200px;
-    height: 60px;}
-
-
-
-    /* Button 3*/
-.button3 {
-    font-family: "Source Code Pro", monospace; 
-    font-size: 15px;
+  } 
+  
+  
+  @keyframes fade {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 400% 0;
+    }
+  } */
+  
+  #btn3 {
+    width: 16rem;
+  }
+  
+  #btn4 {
+    width: 16rem;
+  }
+  
+  /* text */
+  
+  .content {
+    position: relative;
+    margin-top: 1rem;
+    height: auto;
+  }
+  .bgText {
+    font-family: "Source Code Pro", monospace;
+    font-size: 6.25rem;
     color: white;
-    background-color: transparent;
-    
-    width: 150px;
-    height: 30px;
-    border-radius: 25px;
-    border: 3px solid white;
-
-    transition: all 0.5s;
+    filter: opacity(0.15);
+    margin-left: 5rem;
+  }
   
-    position: absolute;
-    top: 16%;
-    left: 40%;
-}
-
-.button3:hover {
-    background-color: transparent;
-}
-
-.button3::before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    width: 260px;
-    height: 65px;
-    border-radius: 25px;
-    background-size: 500%;
-    z-index: -1;
-    filter: blur(5px);
-    animation: fade 10s linear infinite;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-   
- 
-    position: absolute;
-    top: -5px;
-    left: -8px;
-}
- 
-.button3:hover::before {
-    opacity: 1;
-}
- 
-.button3::after {
-    content: '';
-    height: 100%;
+  .grid {
     width: 100%;
-    border-radius: 25px;
-    background: #111; 
- 
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-}
- 
-.button3:hover::after {
-    opacity: 1;
-}
-
-.rectangle:hover .button3 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    width: 250px;
-    height: 60px;
-}
-
-
-/* Button 4*/
-
-.button4 {
-    font-family: "Source Code Pro", monospace; 
-    font-size: 15px;
-    color: white;
-    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(5%, auto);
+    margin-left: 5rem;
     
-    width: 180px;
-    height: 30px;
-    border-radius: 25px;
-    border: 3px solid white;
-
-    transition: all 0.5s;
-  
+  }
+  .container {
     position: absolute;
-    top: 16%;
-    left: 55%;
-}
-
-.button4:hover {
-    background-color: transparent;
-}
-
-.button4::before {
-   content: '';
-   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-   width: 310px;
-   height: 65px;
-   border-radius: 25px;
-   background-size: 500%;
-   z-index: -1;
-   filter: blur(5px);
-   animation: fade 10s linear infinite;
-   opacity: 0;
-   transition: opacity 0.5s ease-in-out;
+    top: 5em;
+  }
   
-
-   position: absolute;
-   top: -5px;
-   left: -8px;
-}
-
-.button4:hover::before {
-   opacity: 1;
-}
-
-.button4::after {
-   content: '';
-   height: 100%;
-   width: 100%;
-   border-radius: 25px;
-   background: #111; 
-
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0;
-   z-index: -1;
-}
-
-.button4:hover::after {
-   opacity: 1;
-}
-
-.rectangle:hover .button4 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    width: 300px;
-    height: 60px;
-    left: 57%;
-}
-
-@keyframes fade {
-    0%{background-position: 0 0;}
-    100% {background-position: 400% 0;}
- }
+  .hey {
+    font-family: "Source Code Pro", monospace;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    color: white;
+    grid-column: 1/3;
+  }
+  .name {
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    font-size: 9.375rem;
+    width: auto;
+  }
+  .box1 {
+    grid-column: 1/3;
+    width: 50%;
+    
+    
+  }
+  
+  .text {
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    width: 60%;
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+  
+  .link {
+    font-family: "Source Code pro", monospace;
+    font-size: 2rem;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    transition: all .5s ease;
+  }
+  
+  .link:hover {
+    font-size: 3rem;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1070px) {
+    .grid {
+      flex-wrap: wrap;
+    }
+    li {
+      flex: 50%;
+    }
+    .box1 { 
+      width: 90%;
+    }
+  
+    .text {
+      font-size: 2rem;
+    }
+  
+    .hey {
+      font-size: 5rem;
+    }
+    .name {
+      font-size: 9.5rem;
+    }
+    .bgText {
+      font-size: 7rem;
+    }
+  
+    .link {
+      font-size: 2rem;
+    }
+    .link:hover {
+      font-size: 2.5rem;
+    }
+  }
