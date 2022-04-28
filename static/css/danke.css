@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Section 1*/ 
 .sec1 {
   background-color: black;
   height: 100vh;
@@ -56,6 +57,90 @@ body {
   height: 5rem;
 }
 
+/* Section 2*/ 
+
+.sec2 {
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+.sec2head1 {
+  font-family: "Square Peg", cursive;
+  font-size: 3rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+.grid {
+  list-style-type: none;
+  font-size: 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  border: 2px solid black;
+  
+}
+
+.element {
+  display: flex;
+  border: 2px solid black;
+}
+
+.el1 {
+  font-family: "Moo Lah Lah", monospace;
+  font-size: 4rem;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.lars {
+  font-family: "Source Code Pro", monospace;
+  font-size: .5rem;
+}
+
+.el2 {
+  font-family: "Tapestry", monospace;
+  font-size: 3rem;
+  grid-row: 1/3;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.el3 {
+  font-family: "BIZ UDMincho", monospace;
+  
+}
+
+.el4 {
+  font-family: "Genos", monospace;
+  
+}
+
+.el5 {
+  font-family: "Source Code Pro", sans-serif;
+  
+}
+
+.el6 {
+  font-family: "Oswald", cursive;
+  
+}
+
+.el7 {
+  font-family: "Source Code Pro", monospace;
+  
+}
+
+
+
+
+
 @media screen and (min-width: 530px) {
 
   .heading1 {
@@ -67,5 +152,6 @@ body {
   }
   .signature {
     justify-content: center;
+    font-size: 2.5rem;
   }
 }
