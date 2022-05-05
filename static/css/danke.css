@@ -62,7 +62,7 @@ body {
 
 .sec2 {
   background-image: linear-gradient(black, #003478);
-  height: auto;
+  height: 100vh;
 }
 
 .sec2head1 {
@@ -75,20 +75,21 @@ body {
 }
 
 .grid {
-  position: relative;
-  list-style-type: none;
+  
   font-size: 2rem;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(5%, auto);
-  opacity: 1;
-  z-index: 9999;
+  grid-auto-rows: minmax(5%, auto);  
+  border: 2px solid white;
+
+  
   
 }
 
 .element {
   display: flex;
+  border: 2px solid white ;
   
   
 }
@@ -172,9 +173,60 @@ body {
 }
 
 .img1 {
-  height: 3rem;
-  width: 1rem;
+  height: 21.75rem;
+  width: 12.5rem;
 }
+
+/* Section 3 */
+.sec3 {
+  height: 100vh;
+  background-color: rgb(245, 234, 90);
+}
+
+.heading3 {
+  font-family: "Square Peg", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.grid2 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  border: 2px solid white;
+
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.element2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+  border: 2px solid black;
+
+}
+
+.eunice {
+  color: black;
+  grid-column: 1/3;
+}
+
+.Franzi {
+  grid-column: 3/5;
+}
+
+#arrow2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(270deg);
+}
+
+#showmore1 {
+  display: none;
+}
+
 
 
 

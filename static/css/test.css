@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-size: 2rem;
+}
+
+.btn {
+    display: inline;
+}
+
+.arrow {
+  border: solid black;
+  background-color: transparent;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(90deg);
+}
+
+.leftPart {
+  background-color: white;
+  border: 5px solid black;
+  width: 5rem;
+  height: 1.5rem;
+  display: block;
+  transform: rotate(35deg);
+  border-radius: 20px;
+}
+
+.rightPart {
+  background-color: cornflowerblue;
+  border: 5px solid black;
+  width: 5rem;
+  height: 1.5rem;
+  display: block;
+  transform: rotate(-35deg);
+  border-radius: 20px;
+}
+#dots {
+    position: absolute;
+    left: 50%;
+    display: block;
+}
+
+#more {
+  display: none;
+}
+
