@@ -1,25 +1,13 @@
-body {
+#body {
   margin: 0;
   padding: 0;
   background-color: beige;
   font-size: 2rem;
 }
 
-.btn {
-    display: inline;
-}
 
-.arrow {
-  border: solid black;
-  background-color: transparent;
 
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: rotate(90deg);
-}
-
-.leftPart {
+#leftPart {
   background-color: white;
   border: 5px solid black;
   width: 5rem;
@@ -29,7 +17,7 @@ body {
   border-radius: 20px;
 }
 
-.rightPart {
+#rightPart {
   background-color: cornflowerblue;
   border: 5px solid black;
   width: 5rem;
@@ -38,13 +26,39 @@ body {
   transform: rotate(-35deg);
   border-radius: 20px;
 }
-#dots {
-    position: absolute;
-    left: 50%;
-    display: block;
-}
 
-#more {
+#more {display: none;}
+
+#dots {
   display: none;
 }
 
+#more2 {
+  display: none;
+}
+
+#mybtn {
+  margin-top: 5rem;
+  display: block;
+  border: solid;
+  background-color: transparent;
+}
+
+#mybtn2 {
+  margin-top: 5rem;
+  display: block;
+  border: solid;
+  background-color: transparent;
+  animation-name: rotate;
+  animation-duration: .1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100%{transform: rotate(90deg);}
+}
+
+#test {
+  display: inline;
+}
