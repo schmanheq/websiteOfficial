@@ -23,6 +23,7 @@ function myFunction() {
   var btnText = document.getElementById("myBtn");
 
   if (i > 9) {
+    btn.id = "testButton";
     dots.style.display = "inline";
     moreText.style.display = "none";
     i=8;
@@ -30,6 +31,7 @@ function myFunction() {
     dots.style.display = "none";
     moreText.style.display = "inline";
     i=11;
+    btn.id = "mybtn";
   }
 }
 

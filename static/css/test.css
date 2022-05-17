@@ -1,64 +1,83 @@
-#body {
+/* Section 3 */ 
+
+/* standard sec 3 */ 
+body {
   margin: 0;
   padding: 0;
-  background-color: beige;
+}
+
+.element {
+  margin: 1rem;
+}
+
+.heading {
   font-size: 2rem;
 }
 
-
-
-#leftPart {
-  background-color: white;
-  border: 5px solid black;
-  width: 5rem;
-  height: 1.5rem;
-  display: block;
-  transform: rotate(35deg);
-  border-radius: 20px;
+.text {
+  font-size: 1rem;
+  text-align: justify;
+  
 }
 
-#rightPart {
-  background-color: cornflowerblue;
-  border: 5px solid black;
-  width: 5rem;
-  height: 1.5rem;
-  display: block;
-  transform: rotate(-35deg);
-  border-radius: 20px;
+/* Individuel */
+.sec3 {
+  background-image: linear-gradient(#003478,#f0df46);
+  height: auto;
 }
 
-#more {display: none;}
-
-#dots {
-  display: none;
+.element {
+  border: 2px solid black;
+  width: 80vw;
+  height: auto;
 }
 
-#more2 {
-  display: none;
+.element:after {
+  content: '';
+  border: 3px solid blue;
+  
 }
 
-#mybtn {
-  margin-top: 5rem;
-  display: block;
-  border: solid;
-  background-color: transparent;
+.element:before {
+  content: '';
+  border: 2px solid red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
 }
 
-#mybtn2 {
-  margin-top: 5rem;
-  display: block;
-  border: solid;
-  background-color: transparent;
-  animation-name: rotate;
-  animation-duration: .1s;
-  animation-fill-mode: forwards;
+
+
+
+
+.fran {
+  text-align: right;
 }
 
-@keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100%{transform: rotate(90deg);}
+.sec3grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  border: 2px solid black;
 }
 
-#test {
-  display: inline;
+.element5 {
+  display: grid;
+}
+.kn {
+  justify-self: center;
+  color: red;
+}
+
+.kani {
+  text-align: center;
+}
+
+.kon {
+  float: right;
+  font-size: 3rem;
+}
+.konsti1 {
+  margin: .5rem;
 }
