@@ -1,83 +1,136 @@
 /* Section 3 */ 
 
 /* standard sec 3 */ 
+
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
+}
+.sec3 {
+  background-color: #f8f1b1;
+  height: auto; 
+}
+
+#heading {
+  font-size: 4rem;
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .element {
   margin: 1rem;
-}
-
-.heading {
-  font-size: 2rem;
-}
-
-.text {
-  font-size: 1rem;
-  text-align: justify;
-  
-}
-
-/* Individuel */
-.sec3 {
-  background-image: linear-gradient(#003478,#f0df46);
-  height: auto;
-}
-
-.element {
+  padding: 1rem;
   border: 2px solid black;
-  width: 80vw;
-  height: auto;
-}
-
-.element:after {
-  content: '';
-  border: 3px solid blue;
+  position: relative;
+  
   
 }
 
-.element:before {
+.element::before {
   content: '';
-  border: 2px solid red;
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
 
 
-
-
-
-.fran {
-  text-align: right;
+.heading {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  font-family: 'Helvetica';
+  display: flex;
+  justify-content: center;
+  
 }
 
-.sec3grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(5%, auto);
-  border: 2px solid black;
+.wrapper{
+  display: flex;
 }
 
-.element5 {
-  display: grid;
-}
-.kn {
-  justify-self: center;
-  color: red;
+
+.text {
+  font-family: 'Source Code Pro';
+  font-weight: 500;
+  z-index: 1;
+  text-align: justify;
 }
 
-.kani {
-  text-align: center;
+
+/* Individuel */ 
+
+/* Eunice */ 
+.eunshiba {
+  height: 4.5rem;
+  border-radius: 50px;
 }
 
-.kon {
-  float: right;
-  font-size: 3rem;
+/* Franzi */ 
+.drunkenFranzi, .imgFranzi {
+  display: none;
 }
-.konsti1 {
-  margin: .5rem;
+
+
+/* Greg */ 
+
+
+
+@media screen and (min-width: 530px) {
+  .element {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(5%, auto);
+    gap: 1rem;
+  }
+
+  .break {
+    display: none;
+  }
+
+  /* Eunice */ 
+  .eun {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 6rem;
+  }
+  .eunshiba {
+    height: 8rem;
+  }
+
+  /* Franzi */ 
+  .element2 {
+    height: auto;
+  }
+  .wrapper {
+    display: grid;
+    
+    
+
+  }
+  .drunkenFranzi {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline;
+    height: 15rem;
+    border: 2px solid grey;
+    
+    
+  }
+
+  .imgFranzi {
+    z-index: 10;
+    display: inline-block;
+    border: 2px solid grey;
+    height: 17rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+  }
+  
 }
