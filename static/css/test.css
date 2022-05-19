@@ -20,7 +20,7 @@ body {
 }
 
 .element {
-  margin: 1rem;
+  margin: auto;
   padding: 1rem;
   border: 2px solid black;
   position: relative;
