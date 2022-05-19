@@ -58,6 +58,11 @@ body {
   text-align: justify;
 }
 
+.sec3Dank {
+  font-size: 1.5rem;
+  
+}
+
 
 /* Individuel */ 
 
@@ -75,6 +80,20 @@ body {
 
 /* Greg */ 
 
+
+
+/* Vi Minh */ 
+.ViMi {
+  font-size: 3rem;
+}
+
+/* Kathi und Nicki */
+.kn {
+  font-size: 2.5rem;
+}
+
+
+/* Mikka */ 
 
 
 @media screen and (min-width: 530px) {
